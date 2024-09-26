@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flex Layout</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrapper main-header">
+        <a href="#" class="logo">Logo</a>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="sign-register">
+            <button class="sign-in">Sign in</button>
+            <button class="register">Register</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="product">
+        <!-- product-c = product-container -->
+        <div class="wrapper product-c">
+          <section class="img"></section>
+          <section class="product-info">
+            <h3>Text Heading</h3>
+            <span class="tag">tag</span>
+            <p class="price">
+              <span>$</span>
+              <strong>50</strong>
+            </p>
+            <p class="txt-none">Text</p>
+            <form action="">
+              <div class="options">
+                <p>
+                  <label for="">Label</label>
+                  <select name="" id="">
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="">Label</label>
+                  <select name="" id="">
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                  </select>
+                </p>
+              </div>
+
+              <button>Button</button>
+
+              <div class="description">
+                <h5>Title</h5>
+                <p>
+                  Answer the frequently asked question in a simple sentence, a
+                  longish paragraph, or even in a list.
+                </p>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="wrapper">
+          <h3>Latest Reviews</h3>
+
+          <div class="cards">
+            <!-- CARD -->
+            <div class="card">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <h4>Review Title</h4>
+              <p>Review body</p>
+              <div>
+                <img
+                  src="https://randomuser.me/api/portraits/women/26.jpg"
+                  alt=""
+                />
+                <div>
+                  <p>Reviewer name</p>
+                  <p>Date</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="card">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <h4>Review Title</h4>
+              <p>Review body</p>
+              <div>
+                <img
+                  src="https://randomuser.me/api/portraits/women/26.jpg"
+                  alt=""
+                />
+                <div>
+                  <p>Reviewer name</p>
+                  <p>Date</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="card">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <h4>Review Title</h4>
+              <p>Review body</p>
+              <div>
+                <img
+                  src="https://randomuser.me/api/portraits/women/26.jpg"
+                  alt=""
+                />
+                <div>
+                  <p>Reviewer name</p>
+                  <p>Date</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="wrapper">
+          <h3>Follow the latest trends</h3>
+          <p>With our daily newsletter</p>
+          <form action="">
+            <input type="email" name="" id="" required />
+            <button>Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <div class="socials">
+          <h4>Title</h4>
+          <ul class="m-socials">
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+
+        <ul class="one">
+          <li><strong class="title">Use cases</strong></li>
+          <li><a href="#">UI design</a></li>
+          <li><a href="#">UX design</a></li>
+          <li><a href="#">Wireframing</a></li>
+          <li><a href="#">Diagramming</a></li>
+        </ul>
+
+        <ul class="two">
+          <li><strong class="title">Explore</strong></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Prototyping</a></li>
+          <li><a href="">Development Features</a></li>
+          <li><a href="">Design Systems</a></li>
+        </ul>
+
+        <ul class="three">
+          <li><strong class="title">Resources</strong></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Best practices</a></li>
+          <li><a href="#">Colors</a></li>
+          <li><a href="#">Color Wheel</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
