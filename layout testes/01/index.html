@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <!-- ... -->
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -51,15 +55,15 @@
             <p class="txt-none">Text</p>
             <form action="">
               <div class="options">
-                <p>
-                  <label for="">Label</label>
-                  <select name="" id="">
+                <p class="custom-select">
+                  <label for="s-one">Label</label>
+                  <select name="" id="s-one">
                     <option value="one">One</option>
                     <option value="two">Two</option>
                     <option value="three">Three</option>
                   </select>
                 </p>
-                <p>
+                <p class="custom-select">
                   <label for="">Label</label>
                   <select name="" id="">
                     <option value="one">One</option>
@@ -72,7 +76,7 @@
               <button>Button</button>
 
               <div class="description">
-                <h5>Title</h5>
+                <h5>Title <i class="ph-bold ph-caret-up"></i></h5>
                 <p>
                   Answer the frequently asked question in a simple sentence, a
                   longish paragraph, or even in a list.
@@ -90,10 +94,14 @@
           <div class="cards">
             <!-- CARD -->
             <div class="card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <div class="stars">
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i>
+              </div>
               <h4>Review Title</h4>
               <p>Review body</p>
-              <div>
+              <div class="review-name">
                 <img
                   src="https://randomuser.me/api/portraits/women/26.jpg"
                   alt=""
@@ -107,10 +115,14 @@
 
             <!-- CARD -->
             <div class="card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <div class="stars">
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i>
+              </div>
               <h4>Review Title</h4>
               <p>Review body</p>
-              <div>
+              <div class="review-name">
                 <img
                   src="https://randomuser.me/api/portraits/women/26.jpg"
                   alt=""
@@ -124,10 +136,14 @@
 
             <!-- CARD -->
             <div class="card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <div class="stars">
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i> <i class="ph-bold ph-star"></i>
+                <i class="ph-bold ph-star"></i>
+              </div>
               <h4>Review Title</h4>
               <p>Review body</p>
-              <div>
+              <div class="review-name">
                 <img
                   src="https://randomuser.me/api/portraits/women/26.jpg"
                   alt=""
@@ -147,7 +163,13 @@
           <h3>Follow the latest trends</h3>
           <p>With our daily newsletter</p>
           <form action="">
-            <input type="email" name="" id="" required />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="you@example.com"
+              required
+            />
             <button>Submit</button>
           </form>
         </div>
@@ -191,5 +213,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

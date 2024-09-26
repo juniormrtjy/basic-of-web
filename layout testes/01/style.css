@@ -10,8 +10,10 @@
   /* colors */
   --text-neutral: #303030;
   --text-default-secondary: #757575;
-  --bg-positive-secondary: #cff7d3;
   --txt-positive-secondary: #02542d;
+  --txt-brand: #f5f5f5;
+  --bg-positive-secondary: #cff7d3;
+  --bg-brand-default: #2c2c2c;
   --border-default: #d9d9d9;
 }
 
@@ -78,6 +80,10 @@ button {
   flex: 50.4rem;
 }
 
+.product-c h3 {
+  margin-bottom: 1.6rem;
+}
+
 .product-info .tag {
   display: block;
   width: fit-content;
@@ -92,6 +98,7 @@ button {
 .product-info .price {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 1.6rem;
 }
 
 .product-info .price span {
@@ -105,24 +112,143 @@ button {
 
 .txt-none {
   color: var(--text-default-secondary);
+  margin-bottom: 2.4rem;
 }
 
 .product-info .options {
   display: flex;
   gap: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .options p {
   flex: 1;
+  position: relative;
 }
 
 select {
-  border-color: red;
-  display: flex;
-
   padding: 1.2rem 1.6rem;
   border: 1px solid var(--border-default);
   border-radius: 0.8rem;
 
   width: 100%;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: none;
+}
+
+.custom-select i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.product form button {
+  display: block;
+  width: 100%;
+  border-radius: 0.8rem;
+  padding-block: 1.2rem;
+
+  text-align: center;
+  color: var(--txt-brand);
+  background-color: var(--bg-brand-default);
+  margin-bottom: 2.4rem;
+}
+
+/* description */
+.description {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border-default);
+}
+
+.description h5 {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+/* REVIEWS */
+.reviews h3 {
+  margin-bottom: 4.8rem;
+}
+.cards {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.card {
+  border: 1px solid var(--border-default);
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+
+  flex: 32.533rem;
+}
+
+.stars {
+  margin-bottom: 2.4rem;
+  font-size: 2.2rem;
+}
+
+.card h4 {
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.review-name {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin-top: 2.4rem;
+}
+
+.review-name img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  padding-block: 6.4rem;
+  text-align: center;
+}
+
+.newsletter h3 {
+  margin-bottom: 0.8rem;
+}
+
+.newsletter p {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  color: var(--text-default-secondary);
+}
+
+.newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.newsletter input[type='email'] {
+  display: inline-block;
+  border: 1px solid var(--border-default);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.6rem;
+  flex: 0 0 25rem;
+}
+
+.newsletter button {
+  display: inline-block;
+  background-color: var(--bg-brand-default);
+  color: var(--txt-brand);
+  border-radius: 0.8rem;
+  border: none;
+  padding: 1.2rem;
 }
